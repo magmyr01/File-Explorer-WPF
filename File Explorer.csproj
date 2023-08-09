@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>File_Explorer</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+	<UseWindowsForms>true</UseWindowsForms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\emptyFolderIcon.png" />
+    <None Remove="Images\fileIcon.png" />
+    <None Remove="Images\folderIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\emptyFolderIcon.png" />
+    <Resource Include="Images\fileIcon.png" />
+    <Resource Include="Images\folderIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+  </ItemGroup>
+
+</Project>
